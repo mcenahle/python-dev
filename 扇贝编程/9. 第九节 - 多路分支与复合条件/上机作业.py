@@ -15,5 +15,7 @@ def guess_password(num):
         print("密码猜对了，玩一会就去学习吧")
     else:
         print("密码不正确，快去学习吧。")
+
+
 result = int(input('刘星猜测的电脑密码是：'))
 guess_password(result)
