@@ -12,11 +12,18 @@ month = [
   'September',  'October',  'November',  'December'
 ]
 
-translated = [
+translated_month = [
   '一月',  '二月',  '三月',  '四月',  '五月',  '六月',
   '七月',  '八月',  '九月',  '十月',  '十一月',  '十二月'
 ]
 
-def translate(word):
-    word = int(input("请输入一个月份对应的英文单词："))
-# 从 word 中的输入值获取 month 表的对应项数，然后在 translated 表中查询对应的值
+def translate():
+    word = input("请输入一个月份对应的英文单词：")
+    if word in month:
+        idx = month.index(word)    # 在 month 中找到对应的序号，记为 idx
+        print(translated_month[idx])     # 在 translated_month 中找到第 idx 项
+    else:
+        print("没有该项。")
+
+# 调用
+translate()
