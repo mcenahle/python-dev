@@ -15,19 +15,19 @@ for para in paras:
     new_words = []
     # 遍历 words 列表，每访问到一个词，将其保存到 word 中
     for word in words:
-      # 从 word 中提取出单词 pure_word
-      # 第一步：去除词尾标点符号
-      word_without_punctuation = word.strip(",.?!-'")
-      # 第二步：转换为小写字母
-      pure_word = word_without_punctuation.lower()
-      # 如果 pure_word 是生词，则记录下来
-      if pure_word in wordlist:
-        new_words.append(pure_word)
+        # 从 word 中提取出单词 pure_word
+        # 第一步：去除词尾标点符号
+        word_without_punctuation = word.strip(",.?!-'")
+        # 第二步：转换为小写字母
+        pure_word = word_without_punctuation.lower()
+        # 如果 pure_word 是生词，则记录下来
+        if pure_word in wordlist:
+            new_words.append(pure_word)
 
     # 段落处理完毕，打印本段生词
     # 如果有生词，打印“生词：xxx, xxx, ...”
     if new_words:
-      print('生词：' + ', '.join(new_words) + '\n')
-    # 否则打印“生词：无”
+        print('生词：' + ', '.join(new_words) + '\n')
+        # 否则打印“生词：无”
     else:
-      print('生词：无' + '\n')
+        print('生词：无' + '\n')
