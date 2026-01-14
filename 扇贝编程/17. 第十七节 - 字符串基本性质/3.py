@@ -8,10 +8,9 @@ paras = article.split('\n')
 
 # 遍历列表 paras
 for para in paras:
-  # 将自然段切分成若干词语
-  words = para.split(' ')
-  # 打印本自然段单词数量
-  print(len(words))
+    # 将自然段切分成若干词语
+    words = para.split(' ')
+    # 打印本自然段单词数量
+    print(len(words))
 # 将自然段切分成若干词语
-
-  # 打印本自然段单词数量
+# 打印本自然段单词数量
